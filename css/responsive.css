@@ -1,0 +1,77 @@
+/* ================================================
+   TrendScope — Responsive Styles
+   ================================================ */
+
+@media (max-width: 1024px) {
+  .hero-content { grid-template-columns: 1fr; gap: 40px; }
+  .hero-visual { order: -1; }
+  .dashboard-preview { transform: none; }
+  .features-grid { grid-template-columns: repeat(2, 1fr); }
+  .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+  .pricing-card.featured { transform: none; }
+  .pricing-card.featured:hover { transform: translateY(-4px); }
+  .testimonial-grid { grid-template-columns: repeat(2, 1fr); }
+  .step { grid-template-columns: 60px 1fr; }
+  .step-visual { display: none; }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+  .dashboard-demo { grid-template-columns: 1fr; }
+  .demo-sidebar {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    overflow-x: auto;
+    padding: 16px;
+  }
+  .sidebar-item {
+    white-space: nowrap;
+    padding: 8px 16px;
+    border-right: none !important;
+  }
+  .sidebar-item.active {
+    border-right: none;
+    border-bottom: 2px solid var(--primary);
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger { display: flex; }
+  .nav-links {
+    position: fixed;
+    top: 0; right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: var(--bg-card);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 32px;
+    gap: 24px;
+    transition: var(--transition);
+    border-left: 1px solid var(--border);
+    z-index: 999;
+  }
+  .nav-links.active { right: 0; }
+  .features-grid { grid-template-columns: 1fr; }
+  .pricing-grid { grid-template-columns: 1fr; }
+  .testimonial-grid { grid-template-columns: 1fr; }
+  .hero-stats { gap: 24px; }
+  .stat-number { font-size: 1.5rem; }
+  .hero-cta { flex-direction: column; }
+  .hero-cta .btn { width: 100%; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+  .demo-header { flex-direction: column; gap: 16px; align-items: flex-start; }
+  .demo-metrics { flex-direction: row; gap: 20px; }
+  .metric { text-align: left; }
+  .logo-strip { gap: 24px; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+  .hero { padding: 100px 0 60px; }
+  .hero h1 { font-size: 2rem; }
+  .hero-subtitle { font-size: 1rem; }
+  .section-header h2 { font-size: 1.6rem; }
+  .btn-lg { padding: 14px 28px; font-size: 0.95rem; }
+  .hero-stats { flex-wrap: wrap; gap: 20px; }
+  .stat { flex: 1; min-width: 80px; }
+}
