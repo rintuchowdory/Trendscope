@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrendScope — Real-Time Trend Analytics &amp; Insights</title>
+  <meta name="description" content="TrendScope provides real-time trend analytics, market intelligence, and actionable insights for data-driven teams.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 32 32" width="32" height="32">
+          <defs>
+            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#6366f1"/>
+              <stop offset="100%" style="stop-color:#06b6d4"/>
+            </linearGradient>
+          </defs>
+          <rect rx="8" width="32" height="32" fill="url(#logoGrad)"/>
+          <path d="M8 22 L12 14 L18 18 L24 8" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="12" cy="14" r="2" fill="#fff"/>
+          <circle cx="18" cy="18" r="2" fill="#fff"/>
+          <circle cx="24" cy="8" r="2" fill="#fff"/>
+        </svg>
+        <span>TrendScope</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#analytics">Analytics</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/contact.html" class="btn btn-outline">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="badge">🚀 Now with AI-Powered Predictions</div>
+        <h1>See What's <span class="gradient-text">Trending</span> Before Everyone Else</h1>
+        <p class="hero-subtitle">TrendScope aggregates real-time data from across the web, delivering actionable trend analytics and market intelligence so you can make smarter decisions, faster.</p>
+        <div class="hero-cta">
+          <a href="pages/contact.html" class="btn btn-primary btn-lg">Get Started Free</a>
+          <a href="#analytics" class="btn btn-ghost btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            See Live Demo
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number" data-target="10">0</span><span class="stat-suffix">M+</span>
+            <span class="stat-label">Data Points Daily</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Enterprise Clients</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="99.9">0</span><span class="stat-suffix">%</span>
+            <span class="stat-label">Uptime SLA</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="dashboard-preview">
+          <div class="preview-header">
+            <div class="preview-dots"><span></span><span></span><span></span></div>
+            <span>TrendScope Dashboard</span>
+          </div>
+          <div class="preview-body">
+            <div class="mini-chart chart-1">
+              <svg viewBox="0 0 200 80" preserveAspectRatio="none">
+                <defs><linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#6366f1" stop-opacity="0.3"/><stop offset="100%" stop-color="#6366f1" stop-opacity="0"/></linearGradient></defs>
+                <path d="M0 70 Q20 60 40 55 T80 35 T120 25 T160 15 T200 10 V80 H0Z" fill="url(#areaGrad)"/>
+                <path d="M0 70 Q20 60 40 55 T80 35 T120 25 T160 15 T200 10" fill="none" stroke="#6366f1" stroke-width="2"/>
+              </svg>
+              <div class="chart-label">Search Volume <span class="trend-up">↑ 34%</span></div>
+            </div>
+            <div class="mini-chart chart-2">
+              <svg viewBox="0 0 200 80" preserveAspectRatio="none">
+                <path d="M0 50 Q30 45 50 50 T100 30 T150 20 T200 25 V80 H0Z" fill="url(#areaGrad)"/>
+                <path d="M0 50 Q30 45 50 50 T100 30 T150 20 T200 25" fill="none" stroke="#06b6d4" stroke-width="2"/>
+              </svg>
+              <div class="chart-label">Social Mentions <span class="trend-up">↑ 28%</span></div>
+            </div>
+            <div class="trend-tags">
+              <span class="tag">#AI2026</span>
+              <span class="tag">#GreenTech</span>
+              <span class="tag">#Web3</span>
+              <span class="tag">#EdgeComputing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </header>
+
+  <!-- Trusted By / Logos -->
+  <section class="trusted-by">
+    <div class="container">
+      <p class="trusted-label">Trusted by innovative teams at</p>
+      <div class="logo-strip">
+        <div class="partner-logo">TechCorp</div>
+        <div class="partner-logo">DataFlow</div>
+        <div class="partner-logo">Nexus AI</div>
+        <div class="partner-logo">CloudPeak</div>
+        <div class="partner-logo">Vantage</div>
+        <div class="partner-logo">Synthwave</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Features</span>
+        <h2>Everything You Need to <span class="gradient-text">Stay Ahead</span></h2>
+        <p>Powerful tools designed to give you a competitive edge in trend discovery and analysis.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" data-aos="fade-up">
+          <div class="feature-icon icon-realtime">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Real-Time Monitoring</h3>
+          <p>Track trends as they emerge across social media, news, forums, and industry publications — updated every second.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon icon-ai">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22"/><path d="M12 2a4 4 0 0 0-4 4c0 1.95 1.4 3.58 3.25 3.93"/><circle cx="12" cy="6" r="1.5"/></svg>
+          </div>
+          <h3>AI-Powered Predictions</h3>
+          <p>Machine learning models analyze historical patterns to forecast emerging trends weeks before they peak.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon icon-alerts">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          </div>
+          <h3>Smart Alerts</h3>
+          <p>Set custom thresholds and get instant notifications when a trend crosses your defined parameters.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon icon-report">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          </div>
+          <h3>Custom Reports</h3>
+          <p>Generate branded, shareable reports with trend breakdowns, sentiment analysis, and growth projections.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-icon icon-api">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
+          </div>
+          <h3>REST API Access</h3>
+          <p>Integrate TrendScope data directly into your applications, pipelines, and internal dashboards via our robust API.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="feature-icon icon-collab">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Team Collaboration</h3>
+          <p>Share insights, annotate trends, and coordinate strategies across your entire organization in one place.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analytics Dashboard Section -->
+  <section class="analytics" id="analytics">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Live Analytics</span>
+        <h2>Interactive <span class="gradient-text">Trend Dashboard</span></h2>
+        <p>Experience the power of TrendScope with our interactive live demo.</p>
+      </div>
+      <div class="dashboard-demo">
+        <div class="demo-sidebar">
+          <div class="sidebar-item active" data-chart="ai">
+            <span class="dot dot-purple"></span>
+            Artificial Intelligence
+          </div>
+          <div class="sidebar-item" data-chart="green">
+            <span class="dot dot-green"></span>
+            Green Technology
+          </div>
+          <div class="sidebar-item" data-chart="remote">
+            <span class="dot dot-blue"></span>
+            Remote Work
+          </div>
+          <div class="sidebar-item" data-chart="crypto">
+            <span class="dot dot-orange"></span>
+            Cryptocurrency
+          </div>
+        </div>
+        <div class="demo-main">
+          <div class="demo-header">
+            <div class="demo-tabs">
+              <button class="tab active">7D</button>
+              <button class="tab">30D</button>
+              <button class="tab">90D</button>
+              <button class="tab">1Y</button>
+            </div>
+            <div class="demo-metrics">
+              <div class="metric">
+                <span class="metric-value">+34.2%</span>
+                <span class="metric-label">Growth</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">1.2M</span>
+                <span class="metric-label">Mentions</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">92</span>
+                <span class="metric-label">Trend Score</span>
+              </div>
+            </div>
+          </div>
+          <div class="demo-chart" id="trendChart">
+            <canvas id="chartCanvas" width="800" height="300"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">How It Works</span>
+        <h2>From Data to <span class="gradient-text">Insight</span> in Three Steps</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Connect Your Sources</h3>
+            <p>Link your data sources — social media accounts, industry feeds, news APIs, or upload custom datasets. TrendScope supports 200+ integrations out of the box.</p>
+          </div>
+          <div class="step-visual">
+            <div class="source-icons">
+              <div class="source-icon">🐦</div>
+              <div class="source-icon">📰</div>
+              <div class="source-icon">📊</div>
+              <div class="source-icon">🔗</div>
+            </div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>AI Analyzes Patterns</h3>
+            <p>Our proprietary ML algorithms process millions of data points in real time, identifying emerging patterns, sentiment shifts, and growth trajectories.</p>
+          </div>
+          <div class="step-visual">
+            <div class="processing-animation">
+              <div class="pulse-ring"></div>
+              <div class="pulse-ring delay-1"></div>
+              <div class="pulse-ring delay-2"></div>
+              <div class="brain-icon">🧠</div>
+            </div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Act on Insights</h3>
+            <p>Receive actionable insights, predictive scores, and strategic recommendations. Set alerts, export reports, or pipe data directly to your decision workflows.</p>
+          </div>
+          <div class="step-visual">
+            <div class="insight-cards">
+              <div class="insight-card green">↑ Strong Buy Signal</div>
+              <div class="insight-card blue">📈 3x Growth Expected</div>
+              <div class="insight-card purple">⚡ Act Within 48hrs</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pricing</span>
+        <h2>Plans That <span class="gradient-text">Scale</span> With You</h2>
+        <p>Start free, upgrade when you're ready. No hidden fees.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Starter</h3>
+            <div class="price"><span class="currency">$</span>0<span class="period">/month</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li>✦ 5 Trend Monitors</li>
+            <li>✦ Basic AI Predictions</li>
+            <li>✦ Email Alerts</li>
+            <li>✦ 7-Day Data History</li>
+            <li>✦ Community Support</li>
+          </ul>
+          <a href="pages/contact.html" class="btn btn-outline btn-block">Get Started</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3>Professional</h3>
+            <div class="price"><span class="currency">$</span>49<span class="period">/month</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li>✦ 50 Trend Monitors</li>
+            <li>✦ Advanced AI Predictions</li>
+            <li>✦ Smart Alerts (SMS, Slack, Webhook)</li>
+            <li>✦ 1-Year Data History</li>
+            <li>✦ Custom Reports</li>
+            <li>✦ API Access (10k calls/mo)</li>
+            <li>✦ Priority Support</li>
+          </ul>
+          <a href="pages/contact.html" class="btn btn-primary btn-block">Start Free Trial</a>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Enterprise</h3>
+            <div class="price">Custom</div>
+          </div>
+          <ul class="pricing-features">
+            <li>✦ Unlimited Monitors</li>
+            <li>✦ Full AI Suite + Custom Models</li>
+            <li>✦ Unlimited Alerts &amp; Integrations</li>
+            <li>✦ Unlimited Data History</li>
+            <li>✦ White-Label Reports</li>
+            <li>✦ Unlimited API Access</li>
+            <li>✦ Dedicated Account Manager</li>
+            <li>✦ SLA &amp; On-Premise Options</li>
+          </ul>
+          <a href="pages/contact.html" class="btn btn-outline btn-block">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonials</span>
+        <h2>Loved by <span class="gradient-text">Data Teams</span> Worldwide</h2>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"TrendScope predicted the surge in AI search interest three weeks before our competitors caught on. That gave us the edge to pivot our content strategy and capture 40% more organic traffic."</p>
+          <div class="testimonial-author">
+            <div class="avatar">SM</div>
+            <div>
+              <strong>Sarah Mitchell</strong>
+              <span>VP of Marketing, TechCorp</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"The API integration was seamless. We pipe TrendScope data directly into our trading models. The accuracy of their sentiment analysis has genuinely improved our returns."</p>
+          <div class="testimonial-author">
+            <div class="avatar">JL</div>
+            <div>
+              <strong>James Lee</strong>
+              <span>Quant Analyst, Vantage Capital</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"From product research to competitive intelligence, TrendScope is our single source of truth. The custom reports save our team hours every week."</p>
+          <div class="testimonial-author">
+            <div class="avatar">AR</div>
+            <div>
+              <strong>Aisha Rahman</strong>
+              <span>Head of Product, Nexus AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to See the Future of Your Market?</h2>
+        <p>Join 500+ companies using TrendScope to stay ahead of the curve. Start your free trial today — no credit card required.</p>
+        <a href="pages/contact.html" class="btn btn-primary btn-lg">Start Free Trial</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <svg class="logo-icon" viewBox="0 0 32 32" width="28" height="28">
+              <rect rx="8" width="32" height="32" fill="url(#logoGrad)"/>
+              <path d="M8 22 L12 14 L18 18 L24 8" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>TrendScope</span>
+          </a>
+          <p>Real-time trend analytics and market intelligence for data-driven teams.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#analytics">Dashboard</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#">API Docs</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TrendScope. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="GitHub">GH</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
