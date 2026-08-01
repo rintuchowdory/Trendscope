@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — TrendScope</title>
+  <meta name="description" content="Get in touch with the TrendScope team. Request a demo, ask about pricing, or get support.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <style>
+    .contact-page { padding: 120px 0 80px; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 60px; }
+    .contact-info h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 16px; }
+    .contact-info p { color: var(--text-muted); line-height: 1.7; margin-bottom: 32px; }
+    .contact-method { display: flex; align-items: center; gap: 16px; padding: 16px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); margin-bottom: 12px; transition: var(--transition); }
+    .contact-method:hover { border-color: var(--primary); }
+    .contact-method-icon { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: rgba(99,102,241,0.15); border-radius: var(--radius-sm); font-size: 1.2rem; flex-shrink: 0; }
+    .contact-method-text strong { display: block; font-size: 0.9rem; margin-bottom: 2px; }
+    .contact-method-text span { font-size: 0.85rem; color: var(--text-muted); }
+    .form-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 40px; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 8px; color: var(--text); }
+    .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 12px 16px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text); font-family: var(--font); font-size: 0.9rem; transition: var(--transition); }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(99,102,241,0.15); }
+    .form-group textarea { min-height: 120px; resize: vertical; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .faq-section { padding: 80px 0; }
+    .faq-item { border: 1px solid var(--border); border-radius: var(--radius-sm); margin-bottom: 12px; overflow: hidden; }
+    .faq-question { padding: 20px 24px; background: var(--bg-card); cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; font-size: 0.95rem; transition: var(--transition); }
+    .faq-question:hover { background: var(--bg-card-hover); }
+    .faq-question::after { content: '+'; font-size: 1.3rem; color: var(--primary-light); transition: var(--transition); }
+    .faq-question.active::after { content: '\2212'; }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .faq-answer-inner { padding: 0 24px 20px; color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; }
+    @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } .form-row { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 32 32" width="32" height="32"><defs><linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#6366f1"/><stop offset="100%" style="stop-color:#06b6d4"/></linearGradient></defs><rect rx="8" width="32" height="32" fill="url(#lg)"/><path d="M8 22 L12 14 L18 18 L24 8" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>TrendScope</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html#features">Features</a></li>
+        <li><a href="../index.html#analytics">Analytics</a></li>
+        <li><a href="../index.html#pricing">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="btn btn-outline">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-tag">Contact</span>
+      <h1>Let's <span class="gradient-text">Talk</span></h1>
+      <p class="page-hero-subtitle">Whether you're interested in a demo, have questions about pricing, or want to explore enterprise solutions — we're here to help.</p>
+    </div>
+  </section>
+
+  <section class="contact-page">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p>Our team typically responds within 24 hours. For urgent inquiries, reach out via our priority support channel.</p>
+          <div class="contact-method"><div class="contact-method-icon">&#128231;</div><div class="contact-method-text"><strong>Email</strong><span>hello@trendscope.io</span></div></div>
+          <div class="contact-method"><div class="contact-method-icon">&#128172;</div><div class="contact-method-text"><strong>Live Chat</strong><span>Available Mon-Fri, 9AM-6PM EST</span></div></div>
+          <div class="contact-method"><div class="contact-method-icon">&#128205;</div><div class="contact-method-text"><strong>Office</strong><span>548 Market St, San Francisco, CA 94104</span></div></div>
+        </div>
+        <div class="form-card">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group"><label for="firstName">First Name</label><input type="text" id="firstName" name="firstName" required></div>
+              <div class="form-group"><label for="lastName">Last Name</label><input type="text" id="lastName" name="lastName" required></div>
+            </div>
+            <div class="form-group"><label for="email">Work Email</label><input type="email" id="email" name="email" required></div>
+            <div class="form-group"><label for="company">Company</label><input type="text" id="company" name="company"></div>
+            <div class="form-group"><label for="interest">What are you interested in?</label>
+              <select id="interest" name="interest"><option value="demo">Product Demo</option><option value="pricing">Pricing Info</option><option value="enterprise">Enterprise Solutions</option><option value="api">API Access</option><option value="support">Support</option><option value="other">Other</option></select>
+            </div>
+            <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us about your use case..."></textarea></div>
+            <button type="submit" class="btn btn-primary btn-block btn-lg">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">FAQ</span>
+        <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item"><div class="faq-question">How does the free trial work?</div><div class="faq-answer"><div class="faq-answer-inner">Our free plan is available indefinitely with up to 5 trend monitors. When you upgrade to Professional, you get a 14-day free trial with full access. Cancel anytime with no charges.</div></div></div>
+        <div class="faq-item"><div class="faq-question">What data sources does TrendScope monitor?</div><div class="faq-answer"><div class="faq-answer-inner">We monitor 10M+ sources including Twitter/X, Reddit, news outlets, Google Trends, patent filings, academic papers, YouTube, TikTok, and more. Enterprise plans can add custom data sources.</div></div></div>
+        <div class="faq-item"><div class="faq-question">Can I integrate TrendScope with my existing tools?</div><div class="faq-answer"><div class="faq-answer-inner">Yes! We offer native integrations with Slack, Microsoft Teams, Zapier, webhooks, and a REST API. Professional plans include 10,000 API calls/month; Enterprise plans offer unlimited access.</div></div></div>
+        <div class="faq-item"><div class="faq-question">Is my data secure?</div><div class="faq-answer"><div class="faq-answer-inner">Absolutely. We are SOC 2 Type II certified, use AES-256 encryption at rest and TLS 1.3 in transit. Enterprise plans offer on-premise deployment and custom security configurations.</div></div></div>
+        <div class="faq-item"><div class="faq-question">How accurate are the AI predictions?</div><div class="faq-answer"><div class="faq-answer-inner">Our prediction models have an average accuracy of 87% for 7-day forecasts and 74% for 30-day forecasts across all tracked trends. We continuously train and validate our models against real outcomes.</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="../index.html" class="logo"><svg class="logo-icon" viewBox="0 0 32 32" width="28" height="28"><defs><linearGradient id="lg2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#6366f1"/><stop offset="100%" style="stop-color:#06b6d4"/></linearGradient></defs><rect rx="8" width="32" height="32" fill="url(#lg2)"/><path d="M8 22 L12 14 L18 18 L24 8" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>TrendScope</span></a><p>Real-time trend analytics and market intelligence for data-driven teams.</p></div>
+        <div class="footer-links"><h4>Product</h4><ul><li><a href="../index.html#features">Features</a></li><li><a href="../index.html#pricing">Pricing</a></li></ul></div>
+        <div class="footer-links"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-links"><h4>Legal</h4><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 TrendScope. All rights reserved.</p></div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
